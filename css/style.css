@@ -58,7 +58,7 @@ body {
 }
 
 .more-treads{
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 /* main section */
@@ -211,7 +211,8 @@ body {
     flex-direction: column;
     color: grey;
     justify-content: center;
-    gap: 35px;
+    gap: 17px;
+    margin-bottom: 20px;
 }
 
 .firstline{
