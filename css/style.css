@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* body section */
+
 body {
     margin: 0;
     padding: 0;
@@ -10,9 +12,9 @@ body {
     background-color: black;
     width: 100%;
     height: auto;
-    grid-template-areas: "sidebar""main";
 }
 
+/* sidebar section */
 
 .sidebar {
     display: flex;
@@ -26,185 +28,6 @@ body {
     color: white;
     position: fixed;
     transform-origin: top left;
-}
-
-.interus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 30vh;
-}
-.container{
-    margin-left: 200px;
-    margin-top: 50px;
-    display: flex;
-    gap:20px;
-}
-.profile1{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-}
-
-#btn{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-#btn li{
-    list-style: none;
-}
-
-.addcircle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    /* margin-bottom: 100px; */
-}
-
-.profile1 p{
-    margin-left: 14px;
-}
-
-.col1{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 20px;
-}
-
-.profile1 button{
-    background-color: grey;
-    color: white;
-    border-radius: 25px;
-}
-
-#ed{
-    margin-top: 5px;
-}
-
-.follow{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 15px;
-}
-.bio{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-/* horizontal line */
-.hl {
-    border-top: 2px solid #1C1B1F; 
-    margin-top: 34px;
-    width: 620px;
-    margin-left: 190px;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 20vw;
-    height: auto;
-    color: white;
-
-}
-.b{
-    margin-top: 80px;
-}
-
-.sec{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-}
-
-.new{
-    margin-top: 34px;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: baseline;
-    justify-content: center;
-    gap: 90px;
-}
-
-#posts{
-    border-top: 1px solid white;
-}
-
-
-.new a {
-    display: flex;
-    align-items: baseline;
-    text-decoration: none;
-    color: white;
-    gap: 5px;
-}
-
-.new img {
-    margin-top: 10px;
-}
-
-.gridbox{
-    margin-top: 20px;
-    margin-left: 15vw;
-    display: grid;
-    width: 10px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 10px 10px;
-
-}
-
-
-.footertext{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    color: grey;
-    justify-content: center;
-}
-
-.firstline{
-    display: flex;
-    justify-content: center;
-}
-
-.footerlist1 {
-    display: flex;
-    list-style: none;
-    gap: 5px;
-}
-.secendline{
-    justify-content: center;
-    display: flex;
-}
-.footerlist2{
-    display: flex;
-    list-style: none;
-    gap: 5px;
-}
-
-.English{
-    margin-top: -35px;
-    grid-column-start: 8;
-}
-
-.ig{
-    margin-top: -35px;
-}
-
-.footertext a{
-    text-decoration: none;
-    color: grey;
 }
 
 .logo img {
@@ -234,7 +57,185 @@ body {
     width: 20px;
 }
 
-.i img {
+.more-treads{
+    margin-top: 80px;
+}
+
+/* main section */
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20vw;
+    height: auto;
+    color: white;
+}
+
+/* main header */
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.container{
+    margin-left: 200px;
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+}
+.profile-leftside{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.profile-img img {
     margin-left: 90px;
     border-radius: 50%;
+}
+
+.addcircle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+
+#btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#btn li{
+    list-style: none;
+}
+
+.profile-leftside p{
+    margin-left: 14px;
+}
+
+.profile-rightside{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.profile-leftside button{
+    background-color: grey;
+    color: white;
+    border-radius: 25px;
+}
+
+#button-id{
+    margin-top: 5px;
+}
+
+.follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+}
+
+.bio{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* horizontal line */
+.hl {
+    border-top: 2px solid #1C1B1F; 
+    margin-top: 34px;
+    width: 620px;
+    margin-left: 190px;
+}
+
+/* grid section */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.grid-slide{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: baseline;
+    justify-content: center;
+    gap: 90px;
+}
+
+#posts{
+    border-top: 1px solid white;
+}
+
+
+.grid-slide a {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+}
+
+.grid-slide img {
+    margin-top: 10px;
+}
+
+.gridbox{
+    margin-top: 20px;
+    margin-left: 15vw;
+    display: grid;
+    width: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px 10px;
+}
+
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    justify-content: center;
+    gap: 35px;
+}
+
+.firstline{
+    display: flex;
+    justify-content: center;
+}
+
+.footerlist1 {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.secendline{
+    justify-content: center;
+    display: flex;
+}
+.footerlist2{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: grey;
 }
