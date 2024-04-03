@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     background-color: black;
     width: 20vw;
-    height: auto;
+    height: 100%;
     padding: 20px;
     box-sizing: border-box;
     border-right: 1px solid grey; 
@@ -48,8 +48,17 @@ body {
 .menu li a {
     display: flex;
     text-decoration: none;
-    color: white;
+    color: #a5a4a4;
     align-items: center;
+}
+
+#miniprofile{
+    color: white;
+}
+
+#miniprofile img{
+    border: solid;
+    border-radius: 25px;
 }
 
 .menu li a img {
@@ -58,7 +67,7 @@ body {
 }
 
 .more-treads{
-    margin-top: 120px;
+    margin-top: 135px;
 }
 
 /* main section */
@@ -104,7 +113,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: right;
+    align-items: center;
+    background-color: rgb(29, 28, 28);
+    border: 1px solid rgb(29, 28, 28);
+    padding: 2px;
+    border-radius: 55%;
+    box-shadow: inset 0px 0px 0px 4px black;
+    height: 50px;
+    width: 50px;
+}
+
+.addcircle svg{
+    display: flex;
 }
 
 #btn{
@@ -128,18 +148,35 @@ body {
 }
 
 .profile-rightside button{
-    background-color: rgba(211, 211, 211, 0.3);
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
+    display: flex;
+  position: relative;
+  align-content: stretch;
+  align-items: stretch;
+  align-self: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 30px;
+  justify-content: center;
+  width: 106.275px;
+  direction: ltr;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-size-adjust: 100%;
+  color: rgb(245, 245, 245);
+  background-color: #5a5a5a;
+  color-scheme: dark;
+  border-radius: 8px;
 }
 
 .profile-rightside p{
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .profile-rightside img{
-    margin-top: 7px;
+    margin-top: 3px;
 }
 
 .follow{
@@ -184,14 +221,14 @@ body {
 
 #posts{
     border-top: 1px solid white;
+    color: white;
 }
-
 
 .grid-slide a {
     display: flex;
     align-items: baseline;
     text-decoration: none;
-    color: white;
+    color: #a5a4a4;
     gap: 5px;
 }
 
