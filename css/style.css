@@ -127,14 +127,19 @@ body {
     gap: 20px;
 }
 
-.profile-leftside button{
-    background-color: grey;
+.profile-rightside button{
+    background-color: rgba(211, 211, 211, 0.3);
     color: white;
-    border-radius: 25px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-#button-id{
-    margin-top: 5px;
+.profile-rightside p{
+    margin-top: 10px;
+}
+
+.profile-rightside img{
+    margin-top: 7px;
 }
 
 .follow{
@@ -239,4 +244,8 @@ body {
 .footer a{
     text-decoration: none;
     color: grey;
+}
+
+.footerlist2 img{
+    margin-left: 5px;
 }
