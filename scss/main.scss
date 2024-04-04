@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     width: 100%;
-    height: 1044px;
+    height: auto;
 }
 
 /* sidebar section */
@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     background-color: black;
     width: 20vw;
-    height: 100%;
+    height: auto;
     padding: 20px;
     box-sizing: border-box;
     border-right: 1px solid grey; 
@@ -66,7 +66,8 @@ body {
 }
 
 .more-treads{
-    margin-top: 135px;
+    display: block;
+    margin-top: 100px;
 }
 
 /* main section */
@@ -194,14 +195,14 @@ body {
 /* horizontal line */
 .hl {
     border-top: 2px solid #1C1B1F; 
-    margin-top: 34px;
     width: 620px;
-    margin-left: 190px;
 }
 
 /* grid section */
 
 .section{
+    margin-top: 30px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -209,7 +210,6 @@ body {
 }
 
 .grid-slide{
-    margin-top: 34px;
     display: flex;
     flex-direction: row;
     color: white;
@@ -236,10 +236,8 @@ body {
 }
 
 .gridbox{
-    margin-top: 20px;
-    margin-left: 15vw;
+    margin-top: 10px;
     display: grid;
-    width: 10px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 10px 10px;

@@ -1,27 +1,41 @@
 @media screen and (max-width: 834px) {
 
+
+
 .logo{
     display: none;
 }
 
 #instagram{
     display: flex;
+    margin-block: auto;
 }
 
-.sidebar {
 
+
+.sidebar {
       width: 8vw;
-      height: 100%;
-      display: flex;
-      .more-treads{
+      height: 1194px;
+      display: flex;      
+    }
+
+ .more-treads{
+      margin-top: 470px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: end;
-        // align-items: flex-end;
          }
-    }
 
+  .main-menu{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+    .menu li{
+        margin: 0px;
+    }
     .menu li a {
         display: flex;
         text-decoration: none;
@@ -31,5 +45,37 @@
       }
      .menu li p{
         display: none;
-     } 
+     }
+     
+
+
+// main header
+
+.container {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    margin: 0px;
+}
+
+// main section
+
+.main{
+    margin-left: 8vw;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.gridbox{
+    justify-content: center;
+    width: 630px;
+}
+
+.footer{
+    margin-top: 250px;
+}
+
 }
