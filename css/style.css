@@ -1,154 +1,151 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /* body section */
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    width: 100%;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  width: 100%;
+  height: 1044px;
 }
 
 /* sidebar section */
-
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 20vw;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border-right: 1px solid grey; 
-    color: white;
-    position: fixed;
-    transform-origin: top left;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 20vw;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid grey;
+  color: white;
+  position: fixed;
+  transform-origin: top left;
 }
 
-.logo img {
-    justify-content: center;
-    width: 100px;
+#instagram {
+  display: none;
 }
 
 .menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
 .menu li {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .menu li a {
-    display: flex;
-    text-decoration: none;
-    color: #a5a4a4;
-    align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: #a5a4a4;
+  align-items: center;
 }
 
-#miniprofile{
-    color: white;
+#miniprofile {
+  color: white;
 }
 
-#miniprofile img{
-    border: solid;
-    border-radius: 25px;
+#miniprofile img {
+  border: solid;
+  border-radius: 25px;
 }
 
 .menu li a img {
-    margin-right: 10px;
-    width: 20px;
+  margin-right: 10px;
+  width: 20px;
 }
 
-.more-treads{
-    margin-top: 135px;
+.more-treads {
+  margin-top: 135px;
 }
 
 /* main section */
-
 .main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 20vw;
-    height: auto;
-    color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20vw;
+  height: auto;
+  color: white;
 }
 
 /* main header */
-
 .main-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 30vh;
 }
 
-.container{
-    margin-left: 200px;
-    margin-top: 50px;
-    display: flex;
-    gap:20px;
+.container {
+  margin-left: 200px;
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
 }
-.profile-leftside{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
+
+.profile-leftside {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .profile-img img {
-    margin-left: 90px;
-    border-radius: 50%;
+  margin-left: 90px;
+  border-radius: 50%;
 }
 
-.addcircle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(29, 28, 28);
-    border: 1px solid rgb(29, 28, 28);
-    padding: 2px;
-    border-radius: 55%;
-    box-shadow: inset 0px 0px 0px 4px black;
-    height: 50px;
-    width: 50px;
+.addcircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 28, 28);
+  border: 1px solid rgb(29, 28, 28);
+  padding: 2px;
+  border-radius: 55%;
+  box-shadow: inset 0px 0px 0px 4px black;
+  height: 50px;
+  width: 50px;
 }
 
-.addcircle svg{
-    display: flex;
+.addcircle svg {
+  display: flex;
 }
 
-#btn{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-#btn li{
-    list-style: none;
+#btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.profile-leftside p{
-    margin-left: 14px;
+#btn li {
+  list-style: none;
 }
 
-.profile-rightside{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 20px;
+.profile-leftside p {
+  margin-left: 14px;
 }
 
-.profile-rightside button{
-    display: flex;
+.profile-rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.profile-rightside button {
+  display: flex;
   position: relative;
   align-content: stretch;
   align-items: stretch;
@@ -171,118 +168,149 @@ body {
   border-radius: 8px;
 }
 
-.profile-rightside p{
-    margin-top: 7px;
+.profile-rightside p {
+  margin-top: 7px;
 }
 
-.profile-rightside img{
-    margin-top: 3px;
+.profile-rightside img {
+  margin-top: 3px;
 }
 
-.follow{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 15px;
+.follow {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
 }
 
-.bio{
-    display: flex;
-    justify-content: left;
-    align-items: center;
+.bio {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 /* horizontal line */
 .hl {
-    border-top: 2px solid #1C1B1F; 
-    margin-top: 34px;
-    width: 620px;
-    margin-left: 190px;
+  border-top: 2px solid #1C1B1F;
+  margin-top: 34px;
+  width: 620px;
+  margin-left: 190px;
 }
 
 /* grid section */
-
-.section{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
+.section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
 }
 
-.grid-slide{
-    margin-top: 34px;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: baseline;
-    justify-content: center;
-    gap: 90px;
+.grid-slide {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: baseline;
+  justify-content: center;
+  gap: 90px;
 }
 
-#posts{
-    border-top: 1px solid white;
-    color: white;
+#posts {
+  border-top: 1px solid white;
+  color: white;
 }
 
 .grid-slide a {
-    display: flex;
-    align-items: baseline;
-    text-decoration: none;
-    color: #a5a4a4;
-    gap: 5px;
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #a5a4a4;
+  gap: 5px;
 }
 
 .grid-slide img {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.gridbox{
-    margin-top: 20px;
-    margin-left: 15vw;
-    display: grid;
-    width: 10px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 10px 10px;
+.gridbox {
+  margin-top: 20px;
+  margin-left: 15vw;
+  display: grid;
+  width: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px 10px;
 }
 
-
-.footer{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    color: grey;
-    justify-content: center;
-    gap: 17px;
-    margin-bottom: 20px;
+.footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 20px;
 }
 
-.firstline{
-    display: flex;
-    justify-content: center;
+.firstline {
+  display: flex;
+  justify-content: center;
 }
 
 .footerlist1 {
-    display: flex;
-    list-style: none;
-    gap: 5px;
+  display: flex;
+  list-style: none;
+  gap: 5px;
 }
-.secendline{
+
+.secendline {
+  justify-content: center;
+  display: flex;
+}
+
+.footerlist2 {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footerlist2 img {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 834px) {
+  .logo {
+    display: none;
+  }
+  #instagram {
+    display: flex;
+  }
+  .sidebar {
+    width: 8vw;
+    height: 100%;
+    display: flex;
+  }
+  .sidebar .more-treads {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: end;
+  }
+  .menu li a {
     display: flex;
-}
-.footerlist2{
-    display: flex;
-    list-style: none;
-    gap: 5px;
-}
-
-
-.footer a{
     text-decoration: none;
-    color: grey;
+    color: #a5a4a4;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .menu li p {
+    display: none;
+  }
 }
 
-.footerlist2 img{
-    margin-left: 5px;
-}
+/*# sourceMappingURL=style.css.map */
