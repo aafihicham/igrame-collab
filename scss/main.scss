@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     background-color: black;
     width: 20vw;
-    height: auto;
+    height: 100%;
     padding: 20px;
     box-sizing: border-box;
     border-right: 1px solid grey; 
@@ -67,7 +67,8 @@ body {
 
 .more-treads{
     display: block;
-    margin-top: 100px;
+    bottom: 0;
+    position:fixed
 }
 
 /* main section */
@@ -93,8 +94,7 @@ body {
 }
 
 .container{
-    margin-left: 200px;
-    margin-top: 50px;
+    justify-content: center;
     display: flex;
     gap:20px;
 }
