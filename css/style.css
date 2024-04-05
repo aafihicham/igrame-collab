@@ -145,7 +145,13 @@ body {
   gap: 20px;
 }
 
-.profile-rightside button {
+.edit-view {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.profile-rightside .edit-view button {
   display: flex;
   position: relative;
   align-content: stretch;
@@ -281,7 +287,29 @@ body {
   margin-left: 5px;
 }
 
+@media screen and (max-width: 1440px), (min-width: 1440px) {
+  .hidden_bio {
+    display: none;
+  }
+  .top_bar {
+    display: none;
+  }
+  .hidden_follow {
+    display: none;
+  }
+}
 @media screen and (max-width: 834px) {
+  .hidden_bio {
+    display: none;
+  }
+  .top_bar {
+    display: none;
+    align-items: baseline;
+    border-bottom: solid 1px;
+  }
+  .hidden_follow {
+    display: none;
+  }
   .logo {
     display: none;
   }
@@ -341,53 +369,22 @@ body {
   }
 }
 @media only screen and (max-width: 428px) {
-  .sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 35px;
-    background-color: #000;
-    color: #fff;
-    z-index: 1000;
-    border-top: 1px solid rgb(91, 90, 90);
-    padding-top: 11px;
-  }
   .top_bar {
     display: flex;
-    gap: 8PX;
   }
-  .hl_1 {
-    border-top: 2px solid #1C1B1F;
-    width: 100%;
+  .hidden_bio {
+    display: flex;
   }
-  .sidebar-item {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
+  .inline_bar {
+    display: flex;
+    align-items: center;
   }
-  .sidebar-item i {
-    font-size: 24px;
+  .main-header {
+    display: flex;
+    height: 225px;
   }
-  .menu {
-    display: inline-flex;
-    margin-top: 155px;
-    gap: 20px;
-  }
-  .menu li p {
+  #instagram {
     display: none;
-  }
-  .menu li #hiden_icone {
-    display: none;
-  }
-  .menu li a img {
-    margin-right: 17px;
-    width: 20px;
   }
   .logo {
     display: none;
@@ -399,6 +396,7 @@ body {
     gap: 125px;
   }
   .container {
+    justify-content: left;
     margin-top: 0px;
     margin-left: 0px;
   }
@@ -436,17 +434,8 @@ body {
   .profile-leftside p {
     margin-left: 24px;
   }
-  .hl {
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
   .btn {
     display: block;
-  }
-  .btn #btn_1 {
-    margin-top: 5px;
-    display: inline-flex;
   }
 }
 @media only screen and (max-width: 428px) {
@@ -486,11 +475,6 @@ body {
   #h_p_number {
     margin-left: 16px;
   }
-  #hl_2 {
-    margin: 4px;
-    border-top: 2px solid #1C1B1F;
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 428px) and (max-width: 428px) {
   .follow {
@@ -507,32 +491,47 @@ body {
   }
   .inline_bar {
     display: flex;
-    gap: 145px;
+    gap: 140px;
+    align-items: baseline;
+    margin-left: 5px;
   }
-}
-.section {
-  display: flex;
-  margin: 0px;
-}
-
-@media (max-width: 1440px), (min-width: 1440px) {
-  .hidden_bio {
+  .sidebar {
+    display: flex;
+    margin: 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+  }
+  .more-treads {
     display: none;
   }
-  .top_bar {
+  .main-menu {
+    gap: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  #hiden_icone {
     display: none;
   }
-  .hl_1 {
-    display: none;
+  #btn {
+    display: flex;
+    flex-direction: column;
   }
-  .hi {
-    display: none;
+  .grid-slide #posts img {
+    border-top: 1px solid white;
+    color: #0479BF;
   }
-  #hidden_follow {
-    display: none;
+  .grid-slide img {
+    width: 26.3px;
+    height: 26.3px;
+    margin-top: 10px;
   }
-  #hl_2 {
-    display: none;
+  .edit-view {
+    display: flex;
+    gap: 5px;
   }
 }
 

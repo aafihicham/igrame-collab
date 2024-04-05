@@ -29,6 +29,7 @@
             <div class="more-treads">
             <li><a href="#"><img src="icones/More.svg" alt="More" id="hiden_icone"><p>More</p></a></li>
             <li><a href="#"><img src="icones/Treads.svg" alt="Threads" id="hiden_icone"><p>Treads</p></a></li>
+            </div>
         </ul>
     </aside>
 
@@ -42,7 +43,9 @@
         <div class="top_bar">
            
             <div class="inline_bar">
+                <div id="param_icon">
                 <a href="#"><img src="icones/options.svg" alt="options"></a>
+                </div>
                 <div class="dropdown">
                 <p>Siri.v1.01</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184l144 144l144-144"/></svg>
@@ -55,11 +58,9 @@
                     <line x1="1.78489" y1="6.22357" x2="6.43685" y2="6.22357" stroke="white" stroke-width="1.63447" stroke-linecap="round"/>
                     </svg>
                 </div>
-                </div>
+            </div>
 
         </div>
-
-        <div class="hl_1"></div>
     
         <div class="container">
             <div class="profile-leftside">
@@ -75,8 +76,10 @@
             <div class="profile-rightside">
                 <ul id="btn">
                  <li><h4><p>Siri.v1.01</p></h4></li>
-                 <li><button><h4 id="button-id">Edit profile</h4></button></li>
-                 <li><button><h4 id="button-id">View archive</h4></button></li>
+                 <div class="edit-view">
+                  <li><button><h4 id="button-id">Edit profile</h4></button></li>
+                  <li><button><h4 id="button-id">View archive</h4></button></li>
+                </div>
                  <li><a href="#" id="parametre"><img src="icones/options.svg" alt="options"></a></li>
                 </ul>   
                 <div class="follow">
@@ -89,12 +92,11 @@
         </div>
             
                 
-                <!-- <div id="hl_2"></div> -->
+               
                 
      </header>
 
      <section class="section">
-        <!-- <div class="hl"></div> -->
 
         <div class="hidden_follow">
             <h5 id="h_dis"><p id="h_p_number">4</p>  <p id="p_follow">posts</p></h5>
@@ -103,7 +105,7 @@
         </div>
 
         <div class="grid-slide">
-            <a href="#" id="posts"><img src="icones/Posts.svg" alt="Posts" width="15" height="15"><p>Posts</p></a>
+            <a href="#" id="posts"><img src="icones/Posts.svg" alt="Posts" width="15" height="15" id="posts"><p>Posts</p></a>
             <a href="#" ><img src="icones/Saved.svg" alt="saved" width="15" height="15"><p>saved</p></a>
             <a href="#" ><img src="icones/Tagged.svg" alt="Tagged" width="15" height="15"><p>Tagged</p></a>
         </div>
