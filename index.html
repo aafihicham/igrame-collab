@@ -18,7 +18,7 @@
             <li><a href="#" id="instagram"><img src="icones/instagram.svg" alt="instagram"></a></li>
             <div class="main-menu">
              <li><a href="#"><img src="icones/home.svg" alt="Home"><p>Home</p></a></li>
-             <li><a href="#"><img src="icones/search.svg" alt="Search"><p>Search</p></a></li>
+             <li><a href="#"><img src="icones/search.svg" alt="Search" id="hiden_icone"><p>Search</p></a></li>
              <li><a href="#"><img src="icones/explore.svg" alt="Explore"><p>Explore</p></a></li>
              <li><a href="#"><img src="icones/Reels.svg" alt="Reels"><p>Reels</p></a></li>
              <li><a href="#"><img src="icones/Message.svg" alt="Messages"><p>Messages</p></a></li>
@@ -27,8 +27,8 @@
              <li><a href="#" id="miniprofile"><img src="icones/profile.png" alt="Profile"><p>Profile</p></a></li>
             </div>
             <div class="more-treads">
-            <li><a href="#"><img src="icones/More.svg" alt="More"><p>More</p></a></li>
-            <li><a href="#"><img src="icones/Treads.svg" alt="Threads"><p>Treads</p></a></li>
+            <li><a href="#"><img src="icones/More.svg" alt="More" id="hiden_icone"><p>More</p></a></li>
+            <li><a href="#"><img src="icones/Treads.svg" alt="Threads" id="hiden_icone"><p>Treads</p></a></li>
         </ul>
     </aside>
 
@@ -36,9 +36,35 @@
 
     <main class="main">
      <header class="main-header">
+
+        <!-- top bar -->
+
+        <div class="top_bar">
+           
+            <div class="inline_bar">
+                <a href="#"><img src="icones/options.svg" alt="options"></a>
+                <div class="dropdown">
+                <p>Siri.v1.01</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184l144 144l144-144"/></svg>
+                </div>
+                <div class="add_friend_icon">
+                    <svg width="25" height="25" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.026" cy="3.14322" r="2.32598" stroke="white" stroke-width="1.63447"/>
+                    <path d="M16.0551 13.2015V11.9442C16.0551 9.86107 14.3664 8.17235 12.2833 8.17235H9.76869C7.68555 8.17235 5.99683 9.86107 5.99683 11.9442V13.2015" stroke="white" stroke-width="1.63447"/>
+                    <line x1="4.14219" y1="3.96046" x2="4.14219" y2="8.61242" stroke="white" stroke-width="1.63447" stroke-linecap="round"/>
+                    <line x1="1.78489" y1="6.22357" x2="6.43685" y2="6.22357" stroke="white" stroke-width="1.63447" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+
+        </div>
+
+        <div class="hl_1"></div>
+    
         <div class="container">
             <div class="profile-leftside">
                 <div class="profile-img"><img src="images/profile.png" width="90" height="90"></div>
+                <div class="hidden_bio"><h6>🥰😊</h6></div>
                 <div class="addcircle">
                     <a href="#"><svg aria-label="Icône Plus" fill="gray" height="33" role="img" viewBox="0 0 24 24" width="33">
                     <path d="M21 11.3h-8.2V3c0-.4-.3-.8-.8-.8s-.8.4-.8.8v8.2H3c-.4 0-.8.3-.8.8s.3.8.8.8h8.2V21c0 .4.3.8.8.8s.8-.3.8-.8v-8.2H21c.4 0 .8-.3.8-.8s-.4-.7-.8-.7z"></path>
@@ -51,7 +77,7 @@
                  <li><h4><p>Siri.v1.01</p></h4></li>
                  <li><button><h4 id="button-id">Edit profile</h4></button></li>
                  <li><button><h4 id="button-id">View archive</h4></button></li>
-                 <li><a href="#"><img src="icones/options.svg" alt="options"></a></li>
+                 <li><a href="#" id="parametre"><img src="icones/options.svg" alt="options"></a></li>
                 </ul>   
                 <div class="follow">
                     <h5>4 posts</h5>
@@ -60,19 +86,26 @@
                 </div>
                 <div class="bio"><h6>🥰😊</h6></div>
             </div>
-            </div>
+        </div>
             
-                </div>
-                </div>
+                
+                <!-- <div id="hl_2"></div> -->
                 
      </header>
 
      <section class="section">
-        <div class="hl"></div>
+        <!-- <div class="hl"></div> -->
+
+        <div class="hidden_follow">
+            <h5 id="h_dis"><p id="h_p_number">4</p>  <p id="p_follow">posts</p></h5>
+            <h5 id="h_dis"><p id="h_p_number">1</p>  <p id="p_follow">followers</p></h5>
+            <h5 id="h_dis"><p id="h_p_number">56</p> <p id="p_follow">following</p></h5>
+        </div>
+
         <div class="grid-slide">
-            <a href="#" id="posts"><img src="icones/Posts.svg" alt="Posts" width="15" height="15">Posts</a>
-            <a href="#" ><img src="icones/Saved.svg" alt="saved" width="15" height="15">saved</a>
-            <a href="#" ><img src="icones/Tagged.svg" alt="Tagged" width="15" height="15">Tagged</a>
+            <a href="#" id="posts"><img src="icones/Posts.svg" alt="Posts" width="15" height="15"><p>Posts</p></a>
+            <a href="#" ><img src="icones/Saved.svg" alt="saved" width="15" height="15"><p>saved</p></a>
+            <a href="#" ><img src="icones/Tagged.svg" alt="Tagged" width="15" height="15"><p>Tagged</p></a>
         </div>
         <div  class="gridbox">
             <img src="images/1.png" width="200" height=200>
