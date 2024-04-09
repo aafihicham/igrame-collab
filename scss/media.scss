@@ -32,8 +32,6 @@
 
   .top_bar {
     display: none;
-    align-items: baseline;
-    border-bottom: solid 1px;
   }
 
   .hidden_follow{
@@ -81,7 +79,7 @@
         align-items: center;
         margin-top: 40px;
       }
-     .menu li p{
+     .menu li span{
         display: none;
      }
      
@@ -124,7 +122,10 @@
 @media only screen and (max-width: 428px) {
 
   .top_bar{
+    justify-content: center;
     display: flex;
+    width: 428px;
+    border-bottom: solid 1px;
   }
   .hidden_bio {
     display: flex;
@@ -153,14 +154,11 @@
     }
   
 
-
-
-
     .footer{
         display: none;
     }
     .grid-slide{
-        gap: 125px;
+        gap: 115px;
     }
     .container{
       justify-content: left;
@@ -196,11 +194,7 @@
         display: none;
     }
   .addcircle{
-      margin-left: 7px;
       margin-top: 7px;
-  }
-  .profile-leftside p {
-      margin-left: 24px;
   }
 
     .btn{
@@ -233,19 +227,20 @@
   @media only screen and (max-width: 428px) {
     
     .hidden_follow {
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-top-color: #1C1B1F;
         width: 428px;
         border-top: solid 1px;
         border-bottom: solid 1px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 82px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
     }
-
-    #h_p_number{
-      margin-left: 16px;
+    
+    #hidden_follow_color{
+      color: grey;
     }
 
   @media only screen and (max-width: 428px) {
@@ -264,9 +259,8 @@
     }
     .inline_bar {
       display: flex;
-      gap: 140px;
       align-items: baseline;
-      margin-left: 5px;
+      gap: 130px;
     }
 
 
@@ -278,6 +272,7 @@
       width: 100%;
       height: 60px;
       justify-content: center;
+      border-top: solid 1px ;
     }
   
     .more-treads{
@@ -303,6 +298,15 @@
   width: 26.3px;
   height: 26.3px;
   margin-top: 10px;
+}
+
+.menu li a {
+  margin: 0px;
+}
+
+
+.follow-title{
+  display: flex;
 }
 
   .grid-slide img {

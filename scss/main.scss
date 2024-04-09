@@ -128,17 +128,27 @@ body {
     display: flex;
 }
 
-#btn{
+.addcircle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#username{
+    margin-top: 7px;
+}
+
+.btn{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-#btn li{
+.btn li{
     list-style: none;
 }
 
 .profile-leftside p{
-    margin-left: 14px;
+    font-size: 10px;
 }
 
 .profile-rightside{
@@ -178,20 +188,20 @@ body {
   border-radius: 8px;
 }
 
-.profile-rightside p{
-    margin-top: 7px;
-}
+
 
 .profile-rightside img{
     margin-top: 3px;
 }
 
-.follow{
+.follow ul{
     display: flex;
     flex-direction: row;
     justify-content: left;
     gap: 15px;
+    list-style: none;
 }
+
 
 .bio{
     display: flex;

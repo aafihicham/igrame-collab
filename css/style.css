@@ -124,18 +124,28 @@ body {
   display: flex;
 }
 
-#btn {
+.addcircle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#username {
+  margin-top: 7px;
+}
+
+.btn {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-#btn li {
+.btn li {
   list-style: none;
 }
 
 .profile-leftside p {
-  margin-left: 14px;
+  font-size: 10px;
 }
 
 .profile-rightside {
@@ -175,19 +185,16 @@ body {
   border-radius: 8px;
 }
 
-.profile-rightside p {
-  margin-top: 7px;
-}
-
 .profile-rightside img {
   margin-top: 3px;
 }
 
-.follow {
+.follow ul {
   display: flex;
   flex-direction: row;
   justify-content: left;
   gap: 15px;
+  list-style: none;
 }
 
 .bio {
@@ -317,8 +324,6 @@ body {
   }
   .top_bar {
     display: none;
-    align-items: baseline;
-    border-bottom: solid 1px;
   }
   .hidden_follow {
     display: none;
@@ -357,7 +362,7 @@ body {
     align-items: center;
     margin-top: 40px;
   }
-  .menu li p {
+  .menu li span {
     display: none;
   }
   .container {
@@ -383,7 +388,10 @@ body {
 }
 @media only screen and (max-width: 428px) {
   .top_bar {
+    justify-content: center;
     display: flex;
+    width: 428px;
+    border-bottom: solid 1px;
   }
   .hidden_bio {
     display: flex;
@@ -409,7 +417,7 @@ body {
     display: none;
   }
   .grid-slide {
-    gap: 125px;
+    gap: 115px;
   }
   .container {
     justify-content: left;
@@ -444,11 +452,7 @@ body {
     display: none;
   }
   .addcircle {
-    margin-left: 7px;
     margin-top: 7px;
-  }
-  .profile-leftside p {
-    margin-left: 24px;
   }
   .btn {
     display: block;
@@ -478,18 +482,19 @@ body {
 }
 @media only screen and (max-width: 428px) {
   .hidden_follow {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top-color: #1C1B1F;
     width: 428px;
     border-top: solid 1px;
     border-bottom: solid 1px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 82px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
   }
-  #h_p_number {
-    margin-left: 16px;
+  #hidden_follow_color {
+    color: grey;
   }
 }
 @media only screen and (max-width: 428px) and (max-width: 428px) {
@@ -507,9 +512,8 @@ body {
   }
   .inline_bar {
     display: flex;
-    gap: 140px;
     align-items: baseline;
-    margin-left: 5px;
+    gap: 130px;
   }
   .sidebar {
     display: flex;
@@ -519,6 +523,7 @@ body {
     width: 100%;
     height: 60px;
     justify-content: center;
+    border-top: solid 1px;
   }
   .more-treads {
     display: none;
@@ -540,6 +545,12 @@ body {
     width: 26.3px;
     height: 26.3px;
     margin-top: 10px;
+  }
+  .menu li a {
+    margin: 0px;
+  }
+  .follow-title {
+    display: flex;
   }
   .grid-slide img {
     width: 26.3px;
