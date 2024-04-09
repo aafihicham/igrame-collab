@@ -385,122 +385,6 @@ body {
   }
 }
 @media only screen and (max-width: 428px) {
-  .top_bar {
-    justify-content: center;
-    display: flex;
-    width: 428px;
-    border-bottom: solid 1px;
-  }
-  .hidden_bio {
-    display: flex;
-  }
-  .hl {
-    display: none;
-  }
-  .inline_bar {
-    display: flex;
-    align-items: center;
-  }
-  .main-header {
-    display: flex;
-    height: 225px;
-  }
-  #instagram {
-    display: none;
-  }
-  .logo {
-    display: none;
-  }
-  .footer {
-    display: none;
-  }
-  .grid-slide {
-    gap: 115px;
-  }
-  .container {
-    justify-content: left;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .profile-img img {
-    margin-left: 10px;
-    width: 17vw;
-    height: 8vh;
-  }
-  .main {
-    margin-left: 0px;
-  }
-  .bio {
-    display: none;
-  }
-  .hidden_bio {
-    margin-left: 10px;
-  }
-  .gridbox {
-    width: 424px;
-    margin-left: 0px;
-    margin-top: 15px;
-    gap: 7px;
-  }
-  .gridbox img {
-    width: 32vw;
-    height: 15vh;
-  }
-  .grid-slide p {
-    display: none;
-  }
-  .addcircle {
-    margin-top: 7px;
-  }
-  .btn {
-    display: block;
-  }
-  .follow {
-    display: flex;
-    margin-top: 30px;
-  }
-  .follow #dis {
-    display: table-column;
-  }
-  #parametre {
-    display: none;
-  }
-  .profile-leftside {
-    gap: 5px;
-  }
-  .profile-leftside p {
-    margin-top: 0px;
-  }
-  .hidden_follow {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top-color: #1C1B1F;
-    width: 428px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-  }
-  #hidden_follow_color {
-    color: grey;
-  }
-  .follow {
-    display: none;
-  }
-  .dropdown {
-    display: flex;
-    gap: 10px;
-  }
-  #param_icon {
-    margin-bottom: 10px;
-  }
-  .inline_bar {
-    display: flex;
-    align-items: baseline;
-    gap: 130px;
-  }
   .sidebar {
     display: flex;
     margin: 0px;
@@ -510,9 +394,6 @@ body {
     height: 60px;
     justify-content: center;
     border-top: solid 1px;
-  }
-  .more-treads {
-    display: none;
   }
   .main-menu {
     justify-content: space-between;
@@ -525,40 +406,139 @@ body {
     justify-content: space-between;
     padding: 0;
   }
-  #hiden_icone {
-    display: hidden;
-    width: 0;
-    gap: 0;
+  .menu li a {
+    margin: 0px;
   }
-  #btn {
+  #hiden_icone {
+    display: none;
+  }
+  .top_bar {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    width: 428px;
+    border-bottom: solid 1px;
+    margin-bottom: 5px;
+  }
+  .inline_bar {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    gap: 130px;
+  }
+  .dropdown {
+    display: flex;
+    gap: 10px;
+  }
+  .main {
+    margin-left: 0px;
+  }
+  .main-header {
+    display: flex;
+    height: 225px;
+  }
+  .container {
+    justify-content: left;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .profile-img img {
+    margin-left: 10px;
+    width: 17vw;
+    height: 8vh;
+  }
+  .profile-leftside {
+    gap: 5px;
+  }
+  .profile-leftside p {
+    margin-top: 0px;
+  }
+  .hidden_bio {
+    display: flex;
+    margin-left: 10px;
+  }
+  .addcircle-container {
+    margin-right: 30px;
+  }
+  #username {
+    font-size: 23px;
+  }
+  .btn {
+    display: block;
+  }
+  .edit-view {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .hidden_follow {
+    padding: 10px;
+    border-top-color: #1C1B1F;
+    width: 428px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+  #hidden_follow_color {
+    color: grey;
+  }
+  .grid-slide {
+    gap: 115px;
+  }
+  .gridbox {
+    width: 424px;
+    margin-left: 0px;
+    margin-top: 15px;
+    gap: 7px;
+  }
+  .gridbox img {
+    width: 32vw;
+    height: 15vh;
   }
   .grid-slide #hiddenposts {
     width: 26.3px;
     height: 26.3px;
     margin-top: 10px;
   }
-  .menu li a {
-    margin: 0px;
-  }
-  .follow-title {
-    display: flex;
-  }
   .grid-slide img {
     width: 26.3px;
     height: 26.3px;
     margin-top: 10px;
   }
-  .edit-view {
+  #hiddenposts {
     display: flex;
-    gap: 5px;
+  }
+  .hl {
+    display: none;
+  }
+  .more-treads {
+    display: none;
+  }
+  #instagram {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .bio {
+    display: none;
+  }
+  .footer {
+    display: none;
   }
   #posts {
     display: none;
   }
-  #hiddenposts {
-    display: flex;
+  .grid-slide p {
+    display: none;
+  }
+  #parametre {
+    display: none;
+  }
+  .follow {
+    display: none;
   }
 }
 
