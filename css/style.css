@@ -267,6 +267,7 @@ body {
   justify-content: center;
   gap: 17px;
   margin-bottom: 20px;
+  font-size: 10px;
 }
 
 .firstline {
@@ -317,9 +318,6 @@ body {
 
 @media screen and (max-width: 834px) {
   .hidden_bio {
-    display: none;
-  }
-  #hiddenposts {
     display: none;
   }
   .top_bar {
@@ -457,8 +455,6 @@ body {
   .btn {
     display: block;
   }
-}
-@media only screen and (max-width: 428px) {
   .follow {
     display: flex;
     margin-top: 30px;
@@ -469,18 +465,12 @@ body {
   #parametre {
     display: none;
   }
-}
-@media only screen and (max-width: 428px) {
   .profile-leftside {
     gap: 5px;
   }
-}
-@media only screen and (max-width: 428px) {
   .profile-leftside p {
     margin-top: 0px;
   }
-}
-@media only screen and (max-width: 428px) {
   .hidden_follow {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -496,13 +486,9 @@ body {
   #hidden_follow_color {
     color: grey;
   }
-}
-@media only screen and (max-width: 428px) and (max-width: 428px) {
   .follow {
     display: none;
   }
-}
-@media only screen and (max-width: 428px) {
   .dropdown {
     display: flex;
     gap: 10px;
@@ -529,13 +515,20 @@ body {
     display: none;
   }
   .main-menu {
-    gap: 20px;
+    justify-content: space-between;
     margin: 0px;
     display: flex;
     flex-direction: row;
   }
+  .menu .main-menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
   #hiden_icone {
-    display: none;
+    display: hidden;
+    width: 0;
+    gap: 0;
   }
   #btn {
     display: flex;

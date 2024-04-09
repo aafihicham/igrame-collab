@@ -26,10 +26,6 @@
     display: none;
   }
 
-  #hiddenposts{
-    display: none;
-  }
-
   .top_bar {
     display: none;
   }
@@ -200,9 +196,7 @@
     .btn{
       display: block;
     }
-  }
-  
-  @media only screen and (max-width: 428px) {
+
     .follow {
       display: flex;
       margin-top: 30px;
@@ -213,18 +207,18 @@
       #parametre{
         display: none;
       }
-  }
-  @media only screen and (max-width: 428px) {
+  
+  
     .profile-leftside {
       gap: 5px;
     }
-  }
-  @media only screen and (max-width: 428px) {
+  
+  
     .profile-leftside p{
       margin-top: 0px;
     }
-  }
-  @media only screen and (max-width: 428px) {
+  
+
     
     .hidden_follow {
         padding-top: 10px;
@@ -243,13 +237,13 @@
       color: grey;
     }
 
-  @media only screen and (max-width: 428px) {
+
     .follow{
       display: none;
     }
-  }
-  }
-  @media only screen and (max-width: 428px) {
+  
+  
+
     .dropdown{
       display: flex;
       gap: 10px;
@@ -280,14 +274,23 @@
     }
     
     .main-menu{
-      gap: 20px;
+      justify-content: space-between;
       margin: 0px;
       display: flex;
       flex-direction: row;
     }
 
+
+    .menu .main-menu li{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+  }
+
     #hiden_icone{
-      display: none;
+      display: hidden;
+      width: 0;
+      gap: 0;
     }
 
     #btn{
@@ -326,4 +329,7 @@
     #hiddenposts{
       display: flex;
     }
+  
+
+
   }
