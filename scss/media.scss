@@ -162,16 +162,26 @@
 .top_bar{
   justify-content: center;
   display: flex;
+  align-items: center;
   width: 428px;
+  height: 45px;
   border-bottom: solid 1px;
   margin-bottom: 5px;
 }
 
 .inline_bar{
   display: flex;
-  align-items: center;
-  align-items: baseline;
-  gap: 130px;
+
+}
+
+#param_icon{
+  position: absolute;
+  left: 2px;
+}
+
+#add_friend_icon{
+  position: absolute;
+  right: 0;
 }
 
 .dropdown{
